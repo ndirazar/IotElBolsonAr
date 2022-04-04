@@ -4,7 +4,7 @@
       <card class="card-login card-white">
         <template slot="header">
           <img src="img//card-primary.png" alt="" />
-          <h1 class="card-title">IoT GL   </h1>
+          <h1 class="card-title">Iot El Bolson Ar </h1>
         </template>
 
         <div>
@@ -40,13 +40,13 @@
           <div class="pull-left">
             <h6>
               <nuxt-link class="link footer-link" to="/register">
-                Create Account
+                Registrar
               </nuxt-link>
             </h6>
           </div>
 
           <div class="pull-right">
-            <h6><a href="#help!!!" class="link footer-link">Need Help?</a></h6>
+            <h6><a href="#help!!!" class="link footer-link">Ayuda</a></h6>
           </div>
         </div>
       </card>

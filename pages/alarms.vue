@@ -6,7 +6,7 @@
         <card v-if="$store.state.devices.length > 0">
           <div slot="header">
             <h4 class="card-title">
-              Create new Alarm Rule {{ selectedWidgetIndex }}
+              Crear Alarma {{ selectedWidgetIndex }}
             </h4>
           </div>
 
@@ -76,13 +76,13 @@
                 size="lg"
                 :disabled="$store.state.devices.length == 0"
               >
-                Add Alarm Rule
+                Agragar Regla Alarma
               </base-button>
             </div>
           </div>
         </card>
         <card v-else>
-          You need to select a device to create an Alarm
+          Seleecione el Dispositivo para Crear la Regla
         </card>
       </div>
     </div>
@@ -92,7 +92,7 @@
       <div class="col-sm-12">
         <card>
           <div slot="header">
-            <h4 class="card-title">Alarm Rules</h4>
+            <h4 class="card-title">Alarmas</h4>
           </div>
 
           <el-table
@@ -150,7 +150,7 @@
                   ></i>
                 </el-tooltip>
 
-                <!-- no ato row.status al v model porque al cambiar de status cambiaria directo sobre store lo que daría error en 
+                <!-- no ato row.status al v model porque al cambiar de status cambiaria directo sobre store lo que daría error en
                       cambio uso el value, al accionar el switch no cambiará el objeto, pero podré cambiar el valor en la función -->
                 <el-tooltip
                   content="Change Rule Status"
@@ -169,7 +169,7 @@
             </el-table-column>
           </el-table>
 
-          <h4 v-else class="card-title">No Alarm Rules</h4>
+          <h4 v-else class="card-title">Sin Alarmas</h4>
         </card>
       </div>
     </div>
@@ -318,7 +318,7 @@ export default {
         return;
       }
 
-      
+
       this.newRule.dId = this.$store.state.selectedDevice.dId;
       this.newRule.deviceName = this.$store.state.selectedDevice.name;
       this.newRule.variableFullName = this.$store.state.selectedDevice.template.widgets[
@@ -328,7 +328,7 @@ export default {
         this.selectedWidgetIndex
       ].variable;
 
-      
+
 
       const axiosHeaders = {
         headers: {

@@ -40,9 +40,8 @@
           href="#"
           target="_blank"
           rel="noopener"
-          >Nicolas Dirazar</a
+          >Nicolás Dirazar</a
         >
-        for a better web.
       </div>
     </div>
   </footer>
