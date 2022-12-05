@@ -4,7 +4,7 @@
     <div class="row">
       <card>
         <div slot="header">
-          <h4 class="card-title">Add new Device</h4>
+          <h4 class="card-title">Nuevo Dispositivo</h4>
         </div>
 
         <div class="row">
@@ -57,7 +57,7 @@
               type="primary"
               class="mb-3"
               size="lg"
-              >Add</base-button
+              >Agregar</base-button
             >
           </div>
         </div>
@@ -68,7 +68,7 @@
     <div class="row">
       <card>
         <div slot="header">
-          <h4 class="card-title">Devices</h4>
+          <h4 class="card-title">Dispositivos</h4>
         </div>
 
         <el-table :data="$store.state.devices">
